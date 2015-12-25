@@ -120,7 +120,7 @@ public class JSONUtil {
                     getters.put(param,m);
                 }
             }
-            setterCache.put(clazz.getName(),getters);
+            getterCache.put(clazz.getName(),getters);
         }
         Field[] fields = clazz.getDeclaredFields();
         for(int i=0;i<fields.length;i++){
